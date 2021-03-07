@@ -1,5 +1,11 @@
-on: [push, pull_request]
 name: Twitter, together!
+
+# activates whenever a pull request is made to the master branch
+on:
+  pull_request:
+    branches:
+      - master
+
 jobs:
   preview:
     name: Preview
